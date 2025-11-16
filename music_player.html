@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy's Storyteller</title>
+    <link rel="stylesheet" href="music_playe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Chewy&family=Exo+2:ital,
+wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Grechen+Fuemen
+&family=Indie+Flower&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="photos/childe2-removebg-preview.png">
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+    <h1>SASTA SPOTIFY</h1>
+
+    <div class="music-player">
+        <div class="box">
+            <div class="box2"></div>
+            <div class="slider">
+            <input type="range" value="0" class="seek-bar">
+        </div>
+        <div class="icons">
+            <img src="photos/previous.png" class="icon back" id="back">
+            <img src="photos/play-button.png" class="icon-play" id="play" onclick="songplay()">
+            <img src="photos/next.png" class="icon next" id="next">
+        </div>
+        <h3 class="name">NAME</h3>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+`
+</body>
+</html>

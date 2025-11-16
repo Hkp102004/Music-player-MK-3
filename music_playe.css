@@ -1,0 +1,93 @@
+body{
+    align-content: center;
+    text-align: center;
+    /* background-color: #F8C0C8; */
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-image: linear-gradient(to left bottom, #efe7d3, #f8d1c3, #d3bbdd); */
+    background: linear-gradient(to left bottom, #efe7d3, #f8d1c3, #d3bbdd);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    text-shadow: 0 0 10px #BD97CB;
+}
+.box{
+    width: 300px;
+    height: 470px;
+    border: 0.5px solid #C26DBC;
+    align-items: center;
+    align-self: center;
+    border-radius: 20px;
+    background-color: #D3BBDD;
+    justify-content: center;
+    box-shadow: 0 0 40px #EEB5EB;
+    justify-self: center;
+    margin-top: 100px;
+}
+.box2{
+    width: 220px;
+    height: 250px;
+    border: solid 6px pink;
+    /* position: absolute; */
+    margin-top: 50px;
+    margin-left: 35px;
+    border-radius: 30px;
+    background-image: url("photos/1161810.png");
+    box-shadow: 0 0 20px #EFE7D3;
+}
+.seek-bar{
+    -webkit-appearance: none;
+    margin-top: 30px;
+    width: 250px;
+    height: 5px;
+    background-color: pink;
+    cursor: pointer;
+}
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px pink;
+    background-color: #EFE7D3;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 10px pink;
+    cursor: pointer;
+}
+.icon-play{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 10px pink;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin-left: 59px;
+    margin-top: 20px;
+}
+.icon-play{
+    transform: scale(1.5);
+    box-shadow: 0 0 20px pink;
+    cursor: pointer;
+    /* opacity: 0; */
+    transition: all 0.5s ease-in;
+}
+.icon-pause{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    align-self: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+}
