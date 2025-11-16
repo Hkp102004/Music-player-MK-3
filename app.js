@@ -11,7 +11,7 @@ const songname = document.querySelector('.name');
 console.log("Yes I'm working properly without any bugs");
 
 // function songplay() {
-//     if(playbtn.style.opacity == "1"){
+//     if(playbtn.style.opacity == "1"){  deleting this so I can make a new logic for this but also keeping it because it helped me understand at first
 //         playbtn.style.opacity = "0";
 //         pausebtn.style.opacity = "1";
 //         playbtn.style.pointerEvents = "none";
@@ -30,12 +30,12 @@ playbtn.addEventListener("click", ()=>{
     if(music.paused)
     {
         audio.play();
-        playbtn.src="photos/pause.png";
+        playbtn.src="photos/pause.png"; //changes the image without having to do the whole opacity thing
     }
     else
     {
         music.pause();
-        playbtn.src="photos/play-button.png";
+        playbtn.src="photos/play-button.png"; //will change the photo again to default
     }
 })
 
@@ -125,6 +125,7 @@ app.whenReady().then(() => {
 
   win.loadFile('music_player.html');
 });
+
 
 
 console.log("Yes everything is still working");
