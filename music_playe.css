@@ -79,8 +79,8 @@ h1{
     transform: scale(1.5);
     box-shadow: 0 0 20px pink;
     cursor: pointer;
-    /* opacity: 0; */
-    transition: all 0.5s ease-in;
+    /* opacity: 0;  removing this because now I found a better logic to chnage the photo in js and not do it with opacity*/
+    transition: all 0.5s ease-in-out;
 }
 .icon-pause{
     position: absolute;
@@ -90,4 +90,5 @@ h1{
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease-in;
+
 }
